@@ -36,10 +36,10 @@ class ViewController: NSViewController {
         blurFilter.setValue(5.0, forKey: kCIInputRadiusKey)
         let blurredImage = blurFilter.valueForKey(kCIOutputImageKey) as CIImage
 
-        let colorOverlayFilter = CIFilter(name: "CIConstantColorGenerator")
-        colorOverlayFilter.setDefaults()
-        colorOverlayFilter.setValue(NSColor.redColor().colorWithAlphaComponent(0.2), forKey: kCIInputColorKey)
-        let colorImage = colorOverlayFilter.valueForKey(kCIOutputImageKey) as CIImage
+        let colorGenerator = CIFilter(name: "CIConstantColorGenerator")
+        colorGenerator.setDefaults()
+        colorGenerator.setValue(NSColor.redColor().colorWithAlphaComponent(0.2), forKey: kCIInputColorKey)
+        let colorImage = colorGenerator.valueForKey(kCIOutputImageKey) as CIImage
 
         let sourceOver = CIFilter(name: "CISourceOverCompositing")
         sourceOver.setDefaults()
