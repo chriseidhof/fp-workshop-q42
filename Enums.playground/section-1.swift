@@ -25,20 +25,13 @@ func path(endpoint: GithubAPI) -> String {
 
 //----------------------------
 
-
-public class Box<T> {
-    public let unbox: T
-    public init(_ value: T) { self.unbox = value }
-}
-
-
 enum Result<A> {
     case Error(String)
-    case Success(Box<A>)
+    case Success(A)
 }
 
 func lookup<A>(key: String, dict: [String:A]) -> Result<A> {
     return .Error("Not implemented yet") // todo
 }
 
-let x  = lookup("Chris", ["Chris": 10])
+let x  = lookup("Chris", dict: ["Chris": 10])

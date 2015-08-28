@@ -25,13 +25,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		836E83281A5D696C009DA34A /* CoreImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		836E83281A5D696C009DA34A /* CoreImageTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreImageTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		836E832C1A5D696C009DA34A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		836E832D1A5D696C009DA34A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		836E832F1A5D696C009DA34A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		836E83311A5D696C009DA34A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		836E83341A5D696C009DA34A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		836E833A1A5D696C009DA34A /* CoreImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		836E833A1A5D696C009DA34A /* CoreImageTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreImageTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		836E833F1A5D696C009DA34A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		836E83401A5D696C009DA34A /* CoreImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreImageTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,8 +66,8 @@
 		836E83291A5D696C009DA34A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				836E83281A5D696C009DA34A /* CoreImage.app */,
-				836E833A1A5D696C009DA34A /* CoreImageTests.xctest */,
+				836E83281A5D696C009DA34A /* CoreImageTest.app */,
+				836E833A1A5D696C009DA34A /* CoreImageTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,9 +112,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		836E83271A5D696C009DA34A /* CoreImage */ = {
+		836E83271A5D696C009DA34A /* CoreImageTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 836E83441A5D696C009DA34A /* Build configuration list for PBXNativeTarget "CoreImage" */;
+			buildConfigurationList = 836E83441A5D696C009DA34A /* Build configuration list for PBXNativeTarget "CoreImageTest" */;
 			buildPhases = (
 				836E83241A5D696C009DA34A /* Sources */,
 				836E83251A5D696C009DA34A /* Frameworks */,
@@ -124,14 +124,14 @@
 			);
 			dependencies = (
 			);
-			name = CoreImage;
+			name = CoreImageTest;
 			productName = CoreImage;
-			productReference = 836E83281A5D696C009DA34A /* CoreImage.app */;
+			productReference = 836E83281A5D696C009DA34A /* CoreImageTest.app */;
 			productType = "com.apple.product-type.application";
 		};
-		836E83391A5D696C009DA34A /* CoreImageTests */ = {
+		836E83391A5D696C009DA34A /* CoreImageTestTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 836E83471A5D696C009DA34A /* Build configuration list for PBXNativeTarget "CoreImageTests" */;
+			buildConfigurationList = 836E83471A5D696C009DA34A /* Build configuration list for PBXNativeTarget "CoreImageTestTests" */;
 			buildPhases = (
 				836E83361A5D696C009DA34A /* Sources */,
 				836E83371A5D696C009DA34A /* Frameworks */,
@@ -142,9 +142,9 @@
 			dependencies = (
 				836E833C1A5D696C009DA34A /* PBXTargetDependency */,
 			);
-			name = CoreImageTests;
+			name = CoreImageTestTests;
 			productName = CoreImageTests;
-			productReference = 836E833A1A5D696C009DA34A /* CoreImageTests.xctest */;
+			productReference = 836E833A1A5D696C009DA34A /* CoreImageTest.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -153,6 +153,8 @@
 		836E83201A5D696C009DA34A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Chris Eidhof";
 				TargetAttributes = {
@@ -165,7 +167,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 836E83231A5D696C009DA34A /* Build configuration list for PBXProject "CoreImage" */;
+			buildConfigurationList = 836E83231A5D696C009DA34A /* Build configuration list for PBXProject "CoreImageTest" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -178,8 +180,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				836E83271A5D696C009DA34A /* CoreImage */,
-				836E83391A5D696C009DA34A /* CoreImageTests */,
+				836E83271A5D696C009DA34A /* CoreImageTest */,
+				836E83391A5D696C009DA34A /* CoreImageTestTests */,
 			);
 		};
 /* End PBXProject section */
@@ -226,7 +228,7 @@
 /* Begin PBXTargetDependency section */
 		836E833C1A5D696C009DA34A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 836E83271A5D696C009DA34A /* CoreImage */;
+			target = 836E83271A5D696C009DA34A /* CoreImageTest */;
 			targetProxy = 836E833B1A5D696C009DA34A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -327,7 +329,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CoreImage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CoreImageTest;
 			};
 			name = Debug;
 		};
@@ -338,7 +340,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CoreImage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CoreImageTest;
 			};
 			name = Release;
 		};
@@ -357,8 +359,8 @@
 				);
 				INFOPLIST_FILE = CoreImageTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreImage.app/Contents/MacOS/CoreImage";
+				PRODUCT_NAME = CoreImageTest;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreImageTest.app/Contents/MacOS/CoreImageTest";
 			};
 			name = Debug;
 		};
@@ -373,15 +375,15 @@
 				);
 				INFOPLIST_FILE = CoreImageTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreImage.app/Contents/MacOS/CoreImage";
+				PRODUCT_NAME = CoreImageTest;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreImageTest.app/Contents/MacOS/CoreImageTest";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		836E83231A5D696C009DA34A /* Build configuration list for PBXProject "CoreImage" */ = {
+		836E83231A5D696C009DA34A /* Build configuration list for PBXProject "CoreImageTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				836E83421A5D696C009DA34A /* Debug */,
@@ -390,21 +392,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		836E83441A5D696C009DA34A /* Build configuration list for PBXNativeTarget "CoreImage" */ = {
+		836E83441A5D696C009DA34A /* Build configuration list for PBXNativeTarget "CoreImageTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				836E83451A5D696C009DA34A /* Debug */,
 				836E83461A5D696C009DA34A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		836E83471A5D696C009DA34A /* Build configuration list for PBXNativeTarget "CoreImageTests" */ = {
+		836E83471A5D696C009DA34A /* Build configuration list for PBXNativeTarget "CoreImageTestTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				836E83481A5D696C009DA34A /* Debug */,
 				836E83491A5D696C009DA34A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

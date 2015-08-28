@@ -11,8 +11,8 @@ func int_reduce(arr: [Int], initialValue: Int,
         return result
 }
 
-let sum = { arr in int_reduce(arr, 0, +) }
-let product = { arr in int_reduce(arr, 1, *) }
+let sum = { arr in int_reduce(arr, initialValue: 0, combine: +) }
+let product = { arr in int_reduce(arr, initialValue: 1, combine: *) }
 
 let numbers = Array(1..<10)
 
